@@ -1,0 +1,83 @@
+﻿html {
+	margin: 0;
+	padding: 0;
+    background-color:darkorange;
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+body {
+	width: 70%;
+	margin: 0 auto;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 1em 50px;
+	background: white;
+	border-bottom: 10px solid silver;
+}
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 2em;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0 0 .4em;
+	color: floralwhite;
+	background-color:darkorange;
+	padding: 5px 10px;
+}
+.main-nav
+{
+	
+	float: right;
+	list-style:none;
+	margin-top: 40px;
+
+}
+
+p {
+	line-height: 1.6;
+	text-align: justify;
+	width: 60%;
+	margin: 0;
+	margin-bottom: 1em;
+}
+a {
+	text-decoration: none;
+	color:darkorange;
+}
+a:hover {
+	color: black;
+}
+
+.linkedIn
+{
+    color: black;
+}
+ul {
+  white-space: nowrap;
+}
+
+ul, li {
+  list-style: none;
+  display: inline;
+}
+
+#container{
+    text-align:center;
+    margin:50px auto; 
+}
+#container x{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+ }
+#home {
+    text-align: right;
+    background-color: yellowgreen;
+    color: black;
+}
+.me
+{
+    text-align: center;
+    background-color: yellowgreen;
+}

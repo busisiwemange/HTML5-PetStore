@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="Products" content="Products page">
+    <title>Pet Store Stop Products Page</title>
+    <link rel="stylesheet" href="style/style.css">
+ </head>
+ <body>
+    <header>
+       <h1><center>Pet Store Stop</center><h1>
+    </header>
+    <div class="row">
+     <ul class="main-nav">
+	<li classs="active"> <a href= "">   </a></li>
+	<li> <a href= "home.html"> Home </a></li>
+	<li> <a href= "products.html"> <b>Products</b></a></li>
+	<li> <a href= "facts.html">Fun Facts</a></li>
+	<li> <a href= "about.html"> About Us </a></li>
+	<li> <a href= "contact.html"> Contact </a></li>
+     </ul>
+    </div>
+   <center><img src="images/pet.png" width="960" height="250" ></center
+   <main>
+      <fieldset>
+       <legend><h2>Pet Food</h2></legend>
+      <div id="container" >
+        <ul>
+          <li>
+           <div class="foodSlides"><img src="images/bird%20food%201.jpg" width="150" height="150"/><caption id="foodCaption"> Kaytee Wild Bird Food R100 per 2kg</caption></div>  
+          </li>
+          <li><div class="foodSlides"><img  src="images/bird%20food%202.jpg" width="150" height="150" /><caption id="foodCaption"> ZuPreem Fruit Blend Bird Food R120 per 2kg</caption></div></li>
+          <li><div class="foodSlides"><img  src="images/Cat%20Food%201.jpg" width="150" height="150" /><caption id="foodCaption"> Whiskas Meaty Selection Cat Food R45 per 1kg</caption></div></li>
+          <li><div class="foodSlides"><img  src="images/Cat%20Food%202.jpg" width="150" height="150"/><caption id="foodCaption"> Friskies Canned Mouse Flavour Cat Food R25 per 500g</caption></div></li>
+          <li><div class="foodSlides"><img  src="images/dog%20food%201.jpeg" width="150" height="150"/><caption id="foodCaption"> Pedigree Adult Dog Food R90 per 1kg</caption></div></li>
+          <li><div class="foodSlides"><img  src="images/dog%20food%202.jpg" width="150" height="150"/><caption id="foodCaption">  Pedigree Small Dog Food R86 per 1kg</caption></div></li>
+            <li><div class="foodSlides"><img  src="images/gecko%20food%201.jpg" width="150" height="150"/><caption id="foodCaption">  Zoo Meds Leopard Gecko Food R60 per 160g bottle</caption></div></li>
+            <li><div class="foodSlides"><img  src="images/gecko%20food.jpg" width="150" height="150"/><caption id="foodCaption"> Crested Gecko Food R100 per 200g bottle</caption></div></li>
+            <li><div class="foodSlides"><img  src="images/mice.jpg" width="150" height="150"/><caption id="foodCaption"> Mice for Snake feeding R100 per box of 6 mice</caption></div></li>
+            <li><div class="foodSlides"><img  src="images/Tortoise%20food%201.jpg" width="150" height="150"/><caption id="foodCaption"> Zoo Meds Natural Grassland Tortoise Food R90 per 250g</caption></div></li>
+            <li><div class="foodSlides"><img  src="images/Tortoise%20food%202.jpg" width="150" height="150"/><caption id="foodCaption"> T-Rex Dry Formula Tortoise Food R160 per 250g</caption></div></li>
+            </ul>
+           <button class="left-buttonA" onclick="plusDivsA(-1)" >&#10094;</button>
+           <button class="right-buttonA" onclick="plusDivsA(1)">&#10095;</button>
+       </div>	
+        
+        <script>
+           var slideIndex = 1;
+               showDivsA(slideIndex);
+
+            function plusDivsA(n) 
+            {
+              showDivsA(slideIndex += n);
+            }
+
+            function showDivsA(n) 
+            {
+              var i;
+              var x = document.getElementsByClassName("foodSlides");
+               if (n > x.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = x.length}
+               for (i = 0; i < x.length; i++) 
+               {
+                  x[i].style.display = "none";  
+               }
+               x[slideIndex-1].style.display = "block";  
+             }
+            
+            }
+        </script>
+        </fieldset>
+        <fieldset>
+         <legend><h2>Pet Accessories</h2></legend>
+        <div id="container">
+        <ul>
+            <li><div class="mySlides"><img src="images/bird%20house%201.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Outdoors Huge Bird House/Cage R1200</caption></div></li>
+            <li><div class="mySlides"><img src="images/bird%20house%202.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Outdoors Small Bird House/Cage R200</caption></div></li>
+            <li><div class="mySlides"><img src="images/bird%20house%203.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Indoors Medium bird House/Cage R550</caption></div></li>
+            <li><div class="mySlides"><img src="images/cat%20gym%202.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Long Cat Gymnasium R950</caption></div></li>
+            <li><div class="mySlides"><img src="images/cat%20house.jpg" width="150" height="150">Medium Cat House R400<caption>&nbsp;&nbsp;</caption></div></li>
+            <li><div class="mySlides"><img src="images/cat%20gym.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Long Cat Gymnasium R110</caption></div></li>
+            <li><div class="mySlides"><img src="images/lizzard%20house%202.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Reptile Tank R350</caption></div></li>
+            <li><div class="mySlides"><img src="images/lizzard%20house%201.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Reptile Tank R400</caption></div></li>
+            <li><div class="mySlides"><img src="images/lizzard%20house%203.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Reptile Tank R500</caption></div></li>
+            <li><div class="mySlides"><img src="images/kennel%201.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Outdoors Dog Kennel R450</caption></div></li>
+            <li><div class="mySlides"><img src="images/kennel%202.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Outdoors Dog Kennel R200</caption></div></li>
+            <li><div class="mySlides"><img src="images/kennel%203.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Outdoors Dog Kennel R750</caption></div></li>
+            <li><div class="mySlides"><img src="images/Tortoise%20accessory%201.jpg" width="150" height="150"><caption>&nbsp;&nbsp;In-House Tortoise Den R1150</caption></div></li>
+            <li><div class="mySlides"><img src="images/Tortoise%20accessory%202.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Simple Tortoise Den R350</caption></div></li>
+            <li><div class="mySlides"><img src="images/Tortoise%20accessory.jpg" width="150" height="150"><caption>&nbsp;&nbsp;Tortoise Den R450</caption></div></li>
+            </ul>
+        </div>
+        <button class="left-buttonB" onclick="plusDivsB(-1)">&#10094;</button>
+        <button class="right-buttonB" onclick="plusDivsB(1)">&#10095;</button>
+        <script>
+           var slideIndex = 1;
+               showDivsB(slideIndex);
+
+            function plusDivsB(n) 
+            {
+              showDivsB(slideIndex += n);
+            }
+
+            function showDivsB(n) 
+            {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+               if (n > x.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = x.length}
+               for (i = 0; i < x.length; i++) 
+               {
+                  x[i].style.display = "none";  
+               }
+               x[slideIndex-1].style.display = "block";  
+             }
+        </script>
+</fieldset>
+    </main>
+    <footer class="me">
+       <center><p>Web page designed by <strong><a href="https://za.linkedin.com/in/busisiwe-mange-b02159126" target="_blank" class="linkedIn">Busisiwe Mange &copy; 2019</a></strong></p></center>
+    </footer>
+  </body>
+</html>

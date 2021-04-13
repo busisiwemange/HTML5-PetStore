@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="Contact" content="Contact Us Page">
+    <title>Pet Store Stop Contact Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script>
+     function save()
+         {
+             var fieldValue1 = document.getElementsByName("Name").value;
+             var fieldValue2 = document.getElementsByName("EMail").value;
+             var fieldValue3 = document.getElementsByName("Phone Number").value;
+             var fieldValue4 = document.getElementsByName("query").value;
+             localStorage.setItem("text",fieldValue1);
+             localStorage.setItem("text",fieldValue2);
+             localStorage.setItem("text",fieldValue3);
+             localStorage.setItem("text", fieldValue4);
+         }
+   </script>
+ </head>
+ <body>
+    <header>
+        <h1><center>Pet Store Stop</center></h1>
+        <div class="row">
+	 <ul class="main-nav">
+          <li classs="active"> <a href= "">   </a></li>
+	  <li> <a href= "home.html"> Home </a></li>
+	  <li> <a href= "products.html"> Products</a></li>
+	  <li> <a href= "facts.html">Fun Facts</a></li>
+	  <li> <a href= "about.html"> About Us </a></li>
+	  <li> <a href= "contact.html"> <b>Contact</b> </a></li>
+	 </ul>
+        </div>
+          <center><img src="images/pet.png" width="960" height="250" ></center>
+   </header>
+   <main>
+     
+      <h3>Contact Details</h3>
+        <p><b> Address</b>: 9 Wale Street, Cape Town, 8001</br>
+         <b>Operation times</b>: 7:30am – 4pm Monday to Friday</br>
+        <b> Call us on</b>: 0860 142 142</br>
+         <b>Email at</b>: petstorestop@mweb.co.za</br>
+         <b>Fax</b>: 021 483 7216</p>
+   </main>
+    <form name="query_form" class="query">
+     <fieldset>
+      <legend>Talk To Us</legend>
+	<p>
+           <label for=name>Name</label>
+	   <input id=name name=name type=text placeholder="First and last name" required autofocus/>
+         </p>
+         <p>
+	   <label for=email>Email</label>
+           <input id=email name=email type=email placeholder="example@domain.com" required/>
+         </p>
+         <p>
+	   <label for=phone>Phone Number</label>
+	   <input id=phone name=phone type=tel placeholder="Eg. +447500000000" required/>
+         </p>
+	   <label for=query>Query</label></br>
+           <textarea id=query name=query placeholder="Your query" class="scrollabletextbox" rows=5 required/></textarea>
+         </p>
+         <p>
+           <input type="submit" name="submit" onclick="return save"/>
+         </p> 
+     <fieldset> 
+   </form>
+  <footer class="me">
+   <center><p>Web page designed by <strong><a href="https://za.linkedin.com/in/busisiwe-mange-b02159126" target="_blank" class="linkedIn">Busisiwe Mange &copy; 2019</a></strong></p></center>
+  </footer>
+ </body>
+</html>
